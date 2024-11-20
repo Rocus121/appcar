@@ -1,6 +1,10 @@
 import streamlit as st
 import joblib
 import pandas as pd
+from sklearn.pipeline import Pipeline
+from sklearn.preprocessing import OneHotEncoder
+from sklearn.compose import ColumnTransformer
+from sklearn.linear_model import Ridge
 
 loaded = joblib.load('y_pred_Price')
 
