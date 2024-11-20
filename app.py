@@ -24,7 +24,7 @@ def prezzo(auto):
 
 def main():
     
-    st.text(f"il valore è: {prezzo(df_auto)}")
+    st.text(f"il valore dell'auto è: {int(prezzo(df_auto))}")
     
 if __name__ == "__main__":
     main()  
